@@ -11,16 +11,18 @@ allButtons.forEach((eachButton)=>{
         }
         else if(e.target.id == 'equals')
         {
-            panel.innerText = (eval(panelValue));
+            panelValue = eval(panelValue);
+            panel.innerText = panelValue;
         }
         else if(e.target.id == 'c')
         {
             panelValue='';
-            panel.innerText='';
+            panel.innerText=0;
         }
         else if( (e.target.id == 'backspace') && (panelValue !== ''))
         {
-            panelValue.slice(0,panelValue.length-1);
+            panelValue = panelValue.toString();
+            panelValue = panelValue.slice(0,panelValue.length-1);
             panel.innerText = panelValue;
         }
         

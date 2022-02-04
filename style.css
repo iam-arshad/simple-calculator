@@ -1,0 +1,24 @@
+#outerContainer
+{
+    border: 3px solid black;
+    width: 20vw;
+    height: 40vh;
+    margin: auto;
+}
+
+#panel
+{
+    width: 95%;
+    height: 15%;
+    margin: 2%;
+
+    font-size: 2rem;
+}
+
+#allButtons
+{
+    margin: 0% 2% 2% 2%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 38%);
+}
